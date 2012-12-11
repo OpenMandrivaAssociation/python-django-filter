@@ -1,2 +1,3 @@
 sources:
-  "django-filter-0.5.3.tar.gz:"	a00fe29f9b4002c48c2a33e10b41113dce7feadb
+  "django-filter-0.5.3.tar.gz": a00fe29f9b4002c48c2a33e10b41113dce7feadb
+  django-filter-0.5.4.tar.gz: fa7c7956979e43a38222d5e57cb84398919ad94e

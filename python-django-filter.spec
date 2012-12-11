@@ -1,6 +1,6 @@
 %define realname    django-filter
 %define name	    python-%{realname}
-%define version 0.5.3
+%define version 0.5.4
 %define release %mkrel 1
 
 Name: %{name}
@@ -10,8 +10,7 @@ Summary:        A Django application for allowing users to filter queryset dynam
 Group:          Development/Python
 License:        BSD
 URL:            http://pypi.python.org/pypi/django-filter
-Source:         %{realname}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
+Source0:        http://pypi.python.org/packages/source/d/django-filter/%{realname}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python-devel python-setuptools
 Requires:       python-django
@@ -30,13 +29,7 @@ find . -name \*.buildinfo* -exec rm {} +
 %{__python} setup.py build
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root,-)
 %{py_puresitedir}/*
-
