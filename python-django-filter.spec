@@ -4,13 +4,13 @@
 %define release %mkrel 1
 
 Name: %{name}
-Version: %{version}
-Release: %{release}
+Version: 0.7
+Release: 1
 Summary:        A Django application for allowing users to filter queryset dynamically
 Group:          Development/Python
 License:        BSD
 URL:            http://pypi.python.org/pypi/django-filter
-Source0:        http://pypi.python.org/packages/source/d/django-filter/%{realname}-%{version}.tar.gz
+Source0:        https://pypi.python.org/packages/source/d/django-filter/django-filter-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python-devel python-setuptools
 Requires:       python-django
@@ -29,7 +29,8 @@ find . -name \*.buildinfo* -exec rm {} +
 %{__python} setup.py build
 
 %install
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
 %files
 %{py_puresitedir}/*
+
