@@ -1,11 +1,11 @@
 %define realname    django-filter
 %define name	    python-%{realname}
 %define version 0.5.4
-%define release %mkrel 1
+%define release 2
 
 Name: %{name}
 Version: 0.7
-Release: 1
+Release: 2
 Summary:        A Django application for allowing users to filter queryset dynamically
 Group:          Development/Python
 License:        BSD
