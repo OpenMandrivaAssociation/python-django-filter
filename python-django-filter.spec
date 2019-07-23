@@ -4,13 +4,13 @@
 %define release 2
 
 Name: %{name}
-Version: 0.7
-Release: 2
+Version:	2.2.0
+Release:	1
 Summary:        A Django application for allowing users to filter queryset dynamically
 Group:          Development/Python
 License:        BSD
 URL:            http://pypi.python.org/pypi/django-filter
-Source0:        https://pypi.python.org/packages/source/d/django-filter/django-filter-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/dc/75/af3f0c2682d2603617ee3061b36395a64fb9d70c327bb759de43e643e5b3/django-filter-2.2.0.tar.gz
 BuildArch:      noarch
 BuildRequires:  python-devel python-setuptools
 Requires:       python-django

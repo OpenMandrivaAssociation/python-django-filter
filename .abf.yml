@@ -1,5 +1,2 @@
-removed_sources:
-  django-filter-0.5.3.tar.gz: a00fe29f9b4002c48c2a33e10b41113dce7feadb
-  django-filter-0.5.4.tar.gz: fa7c7956979e43a38222d5e57cb84398919ad94e
 sources:
-  django-filter-0.7.tar.gz: 059073b66b59b4652e1e504b7662ced02b33d4a0
+  django-filter-2.2.0.tar.gz: 9796ad961fcf319c637e8a36a137b1f944a67e47
